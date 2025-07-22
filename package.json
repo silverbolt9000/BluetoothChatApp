@@ -1,0 +1,80 @@
+{
+  "name": "bluetooth-chat-app",
+  "version": "1.0.0",
+  "description": "Aplicativo Android de mensagens via Bluetooth desenvolvido em React Native para comunicação ponto a ponto sem internet",
+  "main": "index.js",
+  "private": true,
+  "author": "Manus AI",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "bluetooth",
+    "chat",
+    "messaging",
+    "android",
+    "peer-to-peer",
+    "offline"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/bluetooth-chat-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/bluetooth-chat-app/issues"
+  },
+  "homepage": "https://github.com/your-username/bluetooth-chat-app#readme",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "clean:metro": "npx react-native start --reset-cache",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "build:android:debug": "cd android && ./gradlew assembleDebug",
+    "install:android": "adb install android/app/build/outputs/apk/release/app-release.apk",
+    "logs:android": "adb logcat | grep BluetoothChat",
+    "postinstall": "npx react-native link"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native/new-app-screen": "0.80.1",
+    "@react-navigation/bottom-tabs": "^7.4.2",
+    "@react-navigation/native": "^7.1.14",
+    "@react-navigation/stack": "^7.4.2",
+    "react": "19.1.0",
+    "react-native": "0.80.1",
+    "react-native-bluetooth-classic": "^1.73.0-rc.13",
+    "react-native-gesture-handler": "^2.27.2",
+    "react-native-permissions": "^5.4.1",
+    "react-native-push-notification": "^8.1.1",
+    "react-native-safe-area-context": "^5.5.2",
+    "react-native-screens": "^4.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.25.0",
+    "@react-native-community/cli": "19.0.0",
+    "@react-native-community/cli-platform-android": "19.0.0",
+    "@react-native-community/cli-platform-ios": "19.0.0",
+    "@react-native/babel-preset": "0.80.1",
+    "@react-native/eslint-config": "0.80.1",
+    "@react-native/metro-config": "0.80.1",
+    "@react-native/typescript-config": "0.80.1",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.1.0",
+    "@types/react-test-renderer": "^19.1.0",
+    "eslint": "^8.19.0",
+    "jest": "^29.6.3",
+    "prettier": "2.8.8",
+    "react-test-renderer": "19.1.0",
+    "typescript": "5.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
