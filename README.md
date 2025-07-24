@@ -33,7 +33,7 @@ Um aplicativo Android de mensagens via Bluetooth desenvolvido em React Native qu
 
 ### 1. Clone o repositório
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/silverbolt9000/BluetoothChatApp
 cd BluetoothChatApp
 ```
 
